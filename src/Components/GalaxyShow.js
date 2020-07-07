@@ -1,1 +1,0 @@
-GalaxyShow.js

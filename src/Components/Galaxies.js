@@ -5,7 +5,7 @@ const urls = [
                 "https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"
               ]
 
-class GalaxyData extends Component {
+class Galaxies extends Component {
   constructor(props) {
         super(props);
         this.state = 
@@ -80,4 +80,4 @@ class GalaxyData extends Component {
 
 }
 
-export default GalaxyData
+export default Galaxies
