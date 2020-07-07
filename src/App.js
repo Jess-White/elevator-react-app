@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-// import Galaxies from "./Components/Galaxies";
+import Galaxies from "./Components/Galaxies";
 // import Galaxy from "./Components/Galaxy";
 import About from "./Components/About";
 // import Navigation from './Components/Navigation';
@@ -14,7 +14,7 @@ function App() {
         This is my elevator app!
       </header>
       <div>
-        <About />
+        <Galaxies />
       </div>
     </div>
   );
