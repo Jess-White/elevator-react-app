@@ -1,11 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
-import Galaxies from "./Components/Galaxies";
-// import Galaxy from "./Components/Galaxy";
+// import Galaxies from "./Components/Galaxies";
+import Galaxy from "./Components/Galaxy";
 import About from "./Components/About";
-// import Navigation from './Components/Navigation';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Navigation from './Components/Navigation';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+
+import FloorOne from "./Components/Floors/FloorOne";
+import FloorTwo from "./Components/Floors/FloorTwo";
+import FloorThree from "./Components/Floors/FloorThree";
+import FloorFour from "./Components/Floors/FloorFour";
+import FloorFive from "./Components/Floors/FloorFive";
+import FloorSix from "./Components/Floors/FloorSix";
+import FloorSeven from "./Components/Floors/FloorSeven";
+import FloorEight from "./Components/Floors/FloorEight";
+import FloorNine from "./Components/Floors/FloorNine";
+import FloorTen from "./Components/Floors/FloorTen";
+import Basement from "./Components/Floors/Basement";
+import Lobby from "./Components/Floors/Lobby";
+import Penthouse from "./Components/Floors/Penthouse";
+import Rooftop from "./Components/Floors/Rooftop";
 
 function App() {
   return (
@@ -13,9 +28,31 @@ function App() {
       <header className="App-header">
         This is my elevator app!
       </header>
-      <div>
-        <Galaxies />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+              <Route path="/" component={Lobby} exact/>
+
+              <Route path="/basement" component={Basement}/>
+              <Route path="/penthouse" component={Penthouse}/>
+              <Route path="/rooftop" component={Rooftop}/>
+
+              <Route path="/floor-one" component={FloorOne}/>
+              <Route path="/floor-two" component={FloorTwo}/>
+              <Route path="/floor-three" component={FloorThree}/>
+              <Route path="/floor-four" component={FloorFour}/>
+              <Route path="/floor-five" component={FloorFive}/>
+              <Route path="/floor-six" component={FloorSix}/>
+              <Route path="/floor-seven" component={FloorSeven}/>
+              <Route path="/floor-eight" component={FloorEight}/>
+              <Route path="/floor-nine" component={FloorNine}/>
+              <Route path="/floor-ten" component={FloorTen}/>
+              <Route component={Error}/>
+           </Switch>
+           {/*/ <IdeasContainer /> /*/}
+        </div> 
+      </BrowserRouter>
     </div>
   );
 }

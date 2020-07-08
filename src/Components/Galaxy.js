@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 const urls = [
-                "https://apodapi.herokuapp.com/api/",
                 "https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"
               ]
 
@@ -10,7 +9,6 @@ class Galaxies extends Component {
         super(props);
         this.state = 
           { 
-            APOData: [], 
             NebularData: [], 
             returnedData: []
           }
@@ -25,11 +23,8 @@ class Galaxies extends Component {
       .then(console.log(this.state.returnedData))
       .then(response => 
         this.setState({
-          APOData: this.state.returnedData[0],
-          NebularData: this.state.returnedData[1]
+          NebularData: this.state.returnedData[0]
         }))
-      .then(response => 
-        console.log(this.state.APOData))
       .then(
         response => 
         console.log(this.state.NebularData))
@@ -45,24 +40,12 @@ class Galaxies extends Component {
 
     return (
       <div className="container">
-        <div>
-        
-          <h1>First APOD API Call: "Most Recent"</h1>
-          <h1>{this.state.APOData.title}</h1>
-          <img style={{width: "700px", height: "500px"}}
-            src={this.state.APOData.url}></img>
-          <ol>
-          <li>{this.state.APOData.date}</li>
-          <li>{this.state.APOData.description}</li>
-          <li>{this.state.APOData.apod_site}</li>
-          </ol>
-        </div>
       
         <div>
-          <h1>Second APOD API Call: Last Ten Search Results "Planetary Nebula"</h1>
+          <h1>Third API Call: Single Results from the NebularData Hash</h1>
           {this.state.NebularData.map((result, index) => (
             <div>
-            <img style={{width: "700px", height: "500px"}}
+            <img style={{width: "75%", height: "50%"}}
             src={result.url}></img>
             <ol>
             <li>{result.title}</li>
