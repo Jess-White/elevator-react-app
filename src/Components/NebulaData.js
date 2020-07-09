@@ -4,7 +4,7 @@ const urls = [
                 "https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"
               ]
 
-class NebulaData; extends Component {
+class NebulaData extends Component {
   constructor(props) {
         super(props);
         this.state = 
@@ -28,7 +28,18 @@ class NebulaData; extends Component {
       .then(
         response => 
         console.log(this.state.NebularData))
-        };
+      // .then(
+      //   response => 
+      //   this.state.NebularData.map((result, index)
+      //     ({
+      //       url: result.url,
+      //       title: result.title,
+      //       date: result.date,
+      //       description: result.description,
+      //       apod_site: result.apod_site
+      //     })
+      //   )
+      };
 
   render() {
 
@@ -39,33 +50,7 @@ class NebulaData; extends Component {
     }
 
     return (
-      <div className="container">
-
-
-          {this.state.NebularData.map((result, index) => (
-           {result.url}
-           {result.title}
-           {result.date}
-           {result.description}
-           {result.apod_site}
-            ))}
-      
-        <div> 
-          {this.state.NebularData.map((result, index) => (
-            <div>
-            <img style={{width: "75%", height: "50%"}}
-            src={result.url}></img>
-            <ol>
-            <li>{result.title}</li>
-            <li>{result.date}</li>
-            <li>{result.description}</li>
-            <li>{result.apod_site}</li>
-            </ol>
-            </div>
-            ))}
-        </div>
-
-      </div>
+      this.state.NebularData
       )
   };
 

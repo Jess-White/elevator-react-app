@@ -10,6 +10,8 @@ import Galaxy from "./Components/Galaxy";
 import About from "./Components/About";
 import Navigation from './Components/Navigation';
 
+import Header from './Components/Header';
+
 import ElevatorDoor from './Components/Floors/ElevatorDoor';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -27,24 +29,30 @@ import Penthouse from "./Components/Floors/Penthouse";
 import Rooftop from "./Components/Floors/Rooftop";
 import Basement from "./Components/Floors/Basement";
 
+import Nebula from "./Components/Nebula";
+
 class App extends Component {
   render() {
   return (
 
       <div>
+      <container>
+        <div>
+          <Header />
+        </div>
 
-      <div>
-        <Navibar />
-      </div>
+        <div>
+          <Nebula />
+        </div>
 
-      <div>
-        <ElevatorDoor />
-      </div>
+        <div>
+          <Navibar />
+        </div>
 
-      <div>
-      <Galaxies />
-      </div>
-
+        <div>
+          <ElevatorDoor />
+        </div>
+      </container>
       </div>
   );
 }
@@ -175,3 +183,31 @@ export default App;
 // </div>
 
 // </div>
+
+      // <div>
+
+      //   <div>
+      //     <Navibar />
+      //   </div>
+
+      //   <div>
+      //     <ElevatorDoor />
+      //   </div>
+
+      //   <div>
+      //   <Galaxies />
+      //   </div>
+
+      // </div>
+
+      // <div>
+      //   <Navibar />
+      // </div>
+
+      // <div>
+      //   <ElevatorDoor />
+      // </div>
+
+      // <div>
+      //   <Galaxies />
+      // </div>
