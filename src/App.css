@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: url(https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/experimental-grunge-texture-12-1560x1170.jpg) no-repeat center fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,150 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Sliding Doors:*/
+
+body{
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/experimental-grunge-texture-12-1560x1170.jpg');
+
+}
+
+.sliding-doors{
+  width: 80vw;
+  height: 80vh;
+  max-width: 40%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -40vw;
+  overflow: hidden;
+  background: url('https://apod.nasa.gov/apod/image/0702/helix_spitzer_720.jpg');
+  background-size: cover;
+  background-position: -200px 0;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
+  border: 30px groove #141414;
+  outline: 100px solid #000201;
+  outline-offset: 20px;
+}
+
+.sliding-doors:before,
+.sliding-doors:after{
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 0;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-transition: 2000ms;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.sliding-doors:before {
+  background: url('https://media.freestocktextures.com/cache/ea/3d/ea3d7ddf85d051f84a4c301380da0104.jpg');
+  background-size: cover;
+}
+  
+.sliding-doors:after {
+    background: url('https://media.freestocktextures.com/cache/ea/3d/ea3d7ddf85d051f84a4c301380da0104.jpg');
+  background-size: cover;
+
+  background-position: -40vw 0;
+}
+
+.sliding-doors:hover:before{
+  left: -40vw;
+}
+
+.sliding-doors:hover:after{
+  left: 40vw;
+}
+
+/*Elevator Panel Styling:
+*/
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  left: 30%;
+  opacity: 0.8;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  margin: auto;
+  width: 320px;
+  height: 960px;
+  outline: 100px solid #000201;
+  outline-offset: -10px;
+}
+
+.navbar-brand {
+  background-color: #34ffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  opacity: 1.0;
+  color: #00b4b4;
+  margin: 36px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 3px #aaa, inset 0px 2px 3px #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 35px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #34ffff;
+  background: #d9d9d9;
+  box-shadow: 0px 2px 3px #fff,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+}
+
+.navbar-brand:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 28px #ddd;
+  transition: all 0.5s ease;
+  border-color: hsl(180, 100%, 50%);
+  color: hsl(180, 100%, 50%);
+  text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
+  box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
+              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);
+}
+
+/*Glow effect:*/
+.glow {
+  
 }

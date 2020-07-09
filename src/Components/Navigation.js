@@ -12,24 +12,24 @@ import { NavLink } from 'react-router-dom';
   render() {
     return (
 
-      <div className="App" > 
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor: "#350350"}} >
+      <div className="App" >
+        <nav className="vertical-nav fixed-top navbar-fixed-right" style={{backgroundColor: "#2d343a"}} >
           <div className="container">
              <div> 
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/">Lobby</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-one">FloorOne</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-two">FloorTwo</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-three">FloorThree</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-four">FloorFour</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-five">FloorFive</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-six">FloorSix</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-seven">FloorSeven</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-eight">FloorEight</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-nine">FloorNine</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/floor-ten">FloorTen</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/penthouse">FloorTen</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/basement">Basement</NavLink>
-                <NavLink style={{color: "white"}} className="navbar-brand" to="/rooftop">Rooftop</NavLink>
+                <NavLink className="navbar-brand" to="/">L</NavLink>
+                <NavLink className="navbar-brand" to="/floor-one">1</NavLink>
+                <NavLink className="navbar-brand" to="/floor-two">2</NavLink>
+                <NavLink className="navbar-brand" to="/floor-three">3</NavLink>
+                <NavLink className="navbar-brand" to="/floor-four">4</NavLink>
+                <NavLink className="navbar-brand" to="/floor-five">5</NavLink>
+                <NavLink className="navbar-brand" to="/floor-six">6</NavLink>
+                <NavLink className="navbar-brand" to="/floor-seven">7</NavLink>
+                <NavLink className="navbar-brand" to="/floor-eight">8</NavLink>
+                <NavLink className="navbar-brand" to="/floor-nine">9</NavLink>
+                <NavLink className="navbar-brand" to="/floor-ten">10</NavLink>
+                <NavLink className="navbar-brand" to="/penthouse">P</NavLink>
+                <NavLink className="navbar-brand" to="/basement">B</NavLink>
+                <NavLink className="navbar-brand" to="/rooftop">R</NavLink>
              </div>
           </div>
         </nav>
