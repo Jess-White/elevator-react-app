@@ -1,8 +1,6 @@
 import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import NavLink from "react-bootstrap/NavLink";
 
 function Header() {

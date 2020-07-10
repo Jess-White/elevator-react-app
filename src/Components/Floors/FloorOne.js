@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import NebulaData from "../NebulaData";
-
 class FloorOne extends Component {
 
   render() {

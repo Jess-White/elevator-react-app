@@ -55,7 +55,7 @@ class About extends Component {
           <h1>First APOD API Call: "Most Recent"</h1>
           <h1>{this.state.APOData.title}</h1>
           <img style={{width: "700px", height: "500px"}}
-            src={this.state.APOData.url}></img>
+            src={this.state.APOData.url} alt=""></img>
           <ol>
           <li>{this.state.APOData.date}</li>
           <li>{this.state.APOData.description}</li>

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Galaxies from "../Galaxies";
 
 class FloorSix extends Component {
 

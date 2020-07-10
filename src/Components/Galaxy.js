@@ -46,7 +46,7 @@ class Galaxies extends Component {
           {this.state.NebularData.map((result, index) => (
             <div>
             <img style={{width: "75%", height: "50%"}}
-            src={result.url}></img>
+            src={result.url} alt=""></img>
             <ol>
             <li>{result.title}</li>
             <li>{result.date}</li>
