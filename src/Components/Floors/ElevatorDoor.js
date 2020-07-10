@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
+import NebulaData from "../NebulaData";
 
-function ElevatorDoor() {
+class ElevatorDoor extends Component {
+  constructor(props) {
+        super(props);
+  }
+    
+  render() {
 
     return (
+      
+      <div className="nebula">
       <container>
-        <div class="sliding-doors"></div>
+        <div className="sliding-doors" style={{backgroundImage: `url(${this.props.result.url})`}}></div>
       </container>
+      </div>
+      
       )
-  };
+  }
+
+};
 
 export default ElevatorDoor
 
@@ -36,3 +48,5 @@ export default ElevatorDoor
 //       </div>
 //       )
 //   };
+
+// <div className="sliding-doors" style={{backgroundImage: `url(${"https://apod.nasa.gov/apod/image/0702/helix_spitzer_720.jpg"})`}}></div>

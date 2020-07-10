@@ -11,6 +11,7 @@ import About from "./Components/About";
 import Navigation from './Components/Navigation';
 
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 import ElevatorDoor from './Components/Floors/ElevatorDoor';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -29,29 +30,40 @@ import Penthouse from "./Components/Floors/Penthouse";
 import Rooftop from "./Components/Floors/Rooftop";
 import Basement from "./Components/Floors/Basement";
 
-import Nebula from "./Components/Nebula";
-
 class App extends Component {
   render() {
   return (
 
       <div>
-      <container>
+      <div>
+        <Header />
+      </div>
+      <container className="container flex">
+
+      <div>
+      <div>
         <div>
-          <Header />
+        <section className="buttons middle">
+          <div>
+            <Navibar />
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section className="elevator middle">
+          <div>
+            <ElevatorDoor />
+          </div>
+        </section>
         </div>
+      </div>
 
         <div>
-          <Nebula />
+          <Footer />
+        </div>
         </div>
 
-        <div>
-          <Navibar />
-        </div>
-
-        <div>
-          <ElevatorDoor />
-        </div>
       </container>
       </div>
   );

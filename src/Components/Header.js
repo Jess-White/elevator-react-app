@@ -5,20 +5,14 @@ import {Container} from 'react-bootstrap'
 function Header() {
   return (
     <header>
-      <Jumbotron fluid style={{backgroundColor: "#000000"}}>
+      <Jumbotron fluid className="header">
+      <div className="panel">
               <Container fluid>
-                <div className="row">
+                <div className="row logo">
                   <img src="/Ascension_logo.png" alt=""/>
-                  <h2 style={{
-                    margin: "auto", 
-                    color: "white", 
-                    fontWeight: "bold",
-                    fontFamily: "Arial",
-                    fontStretch: "expanded",
-                    fontSize: 30
-                  }}>Going up?</h2>
                 </div>
               </Container>
+      </div>
             </Jumbotron>
     </header>
     )

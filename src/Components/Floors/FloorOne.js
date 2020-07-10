@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import NebulaData from "../NebulaData";
 
 class FloorOne extends Component {
 
@@ -6,9 +7,7 @@ class FloorOne extends Component {
 
     return (
       <div>
-      <h1>
-      Hello world!
-      </h1>
+        <NebulaData />
       </div>
       )
   };
