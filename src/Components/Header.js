@@ -13,11 +13,7 @@ function Header() {
                   <img src="/Ascension_logo.png" alt=""/>
                 </div>
 
-                <div className="header-buttons">
-                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-                </div>
+                
               </Container>
       </div>
             </Jumbotron>
@@ -26,3 +22,9 @@ function Header() {
 }
 
 export default Header;
+
+// <div className="header-buttons">
+// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
+// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
+// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
+// </div>
