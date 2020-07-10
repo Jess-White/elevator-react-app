@@ -1,6 +1,9 @@
-import React from 'react'
-import {Jumbotron} from 'react-bootstrap'
-import {Container} from 'react-bootstrap'
+import React from 'react';
+import {Jumbotron} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavLink from "react-bootstrap/NavLink";
 
 function Header() {
   return (
@@ -10,6 +13,12 @@ function Header() {
               <Container fluid>
                 <div className="row logo">
                   <img src="/Ascension_logo.png" alt=""/>
+                </div>
+
+                <div className="header-buttons">
+                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
+                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
+                <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
                 </div>
               </Container>
       </div>

@@ -32,7 +32,7 @@ class Navibar extends Component {
       <div>
           <BrowserRouter>
            <div>
-             <Navigation />
+             <Navigation handleFloorChange={this.props.handleFloorChange}/>
                <Switch>
                  <Route className="NavRoute" path="/floor-one" component={FloorOne}/>
 

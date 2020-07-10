@@ -31,7 +31,68 @@ import Rooftop from "./Components/Floors/Rooftop";
 import Basement from "./Components/Floors/Basement";
 
 class App extends Component {
+
+  state = {
+    NebularData: [],
+    currentFloor: 0,
+    result: {
+      url: "https://apod.nasa.gov/apod/image/0702/helix_spitzer_720.jpg"
+    }
+  }
+
+  componentDidMount() {
+    console.log(this.props)
+    fetch("https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10")
+    .then(response => response.json())
+    .then(response => this.setState({
+      NebularData: response
+    }))
+  }
+
+  handleFloorChange = (floor) => {
+    if (floor === "P") {
+      this.setState({
+        result: {url: "https://i.dailymail.co.uk/1s/2020/01/02/21/22924692-7846445-image-a-8_1577999656704.jpg"
+          }
+        })
+        return
+      } else if (floor === "R") {
+        this.setState({
+          result: {
+            url: "https://static.scientificamerican.com/blogs/assets/Image/DES_zoom_offcenter.png" 
+          }
+        })
+        return 
+      } else if (floor === "B") {
+        this.setState({
+          result: {
+            url: "https://i0.wp.com/thescuttlefish.com/wp-content/uploads/2015/07/waitomo-glowworm-cave-new-zealand-joseph-michael-12__880.jpg"
+          }
+        })
+        return
+      } else if (floor === "L") {
+        this.setState({
+          result: {
+            url: "https://media.wired.com/photos/5b6cc26261743303b6869f59/master/pass/perseid-591937528.jpg"
+          }
+        })
+        return 
+      } else if (floor === "?") {
+        this.setState({
+          result: {
+            url: "myphoto.jpg"
+          }
+        })
+        return 
+      };
+    console.log(floor);
+    this.setState({
+      result: this.state.NebularData[floor]
+    })
+  }
+
   render() {
+
   return (
 
       <div>
@@ -45,15 +106,15 @@ class App extends Component {
         <div>
         <section className="buttons middle">
           <div>
-            <Navibar />
+            <Navibar handleFloorChange={this.handleFloorChange}/>
           </div>
         </section>
       </div>
 
       <div>
         <section className="elevator middle">
-          <div>
-            <ElevatorDoor />
+          <div> 
+            <ElevatorDoor result={this.state.result}/>
           </div>
         </section>
         </div>

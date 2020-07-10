@@ -7,7 +7,6 @@ class FloorOne extends Component {
 
     return (
       <div>
-        <NebulaData />
       </div>
       )
   };

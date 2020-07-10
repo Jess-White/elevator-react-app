@@ -53,15 +53,15 @@ body{
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
   opacity: 5.0;
+  margin-bottom: 10%;
 }
 
-.bottom-part {
-  opacity: .9;
-  background-color: "red";
+.header-buttons {
+  left: 100%;
 }
 
 .sliding-doors{
-  opacity: .9;
+  opacity: 1.0;
   width: 80vw;
   height: 80vh;
   max-width: 40%;
@@ -113,7 +113,6 @@ body{
 .sliding-doors:hover:after{
   left: 40vw;
 }
-
 /*Elevator Panel Styling:
 */
 
@@ -123,11 +122,12 @@ body{
   height: 100vh;
   left: 30%;
   opacity: 0.8;
-  position: relative;
+  position: absolute;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
-  margin-top: 500px;
-  margin: auto;
+/*  margin: auto;*/
+  margin-top: 26%;
+  margin-left: 40%;
   width: 320px;
   height: 1000px;
   outline: 100px solid #000201;
@@ -215,7 +215,7 @@ body{
   text-align: right;
 }
 
-.panel {
+/*.panel {
   border-radius: 0.8;
   background-color: 000000;
   border-bottom: 1px solid transparent;
@@ -223,10 +223,15 @@ body{
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-}
+}*/
 
 .logo {
   opacity: 1.0;
+}
+
+.jumbotron {
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
+  background-size: cover;
 }
 
 /*.left-column {

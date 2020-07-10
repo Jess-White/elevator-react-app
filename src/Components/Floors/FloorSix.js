@@ -7,7 +7,6 @@ class FloorSix extends Component {
 
     return (
       <div>
-        <Galaxies />
       </div>
       )
   };

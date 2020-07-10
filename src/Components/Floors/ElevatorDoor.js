@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import NebulaData from "../NebulaData";
 
 class ElevatorDoor extends Component {
-  constructor(props) {
-        super(props);
-  }
     
   render() {
 
@@ -18,7 +15,6 @@ class ElevatorDoor extends Component {
       
       )
   }
-
 };
 
 export default ElevatorDoor

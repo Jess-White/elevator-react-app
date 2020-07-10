@@ -4,12 +4,10 @@ import {Container} from 'react-bootstrap'
 
 function Footer() {
   return (
-    <footer>
-      <Jumbotron className="bottom-part" style={{color: "red"}}>
+      <Jumbotron fluid className="jumbotron" style={{color: "black"}}>
         <Container >
         </Container>
       </Jumbotron>
-    </footer>
     )
 }
 
