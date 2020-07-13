@@ -24,12 +24,11 @@ body{
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
   opacity: 5.0;
-  padding-bottom: 30%;
-  padding-top: 30%;
 }
 
 .header-buttons {
   left: 50%;
+  line-height: 55px;
 }
 
 .sliding-doors{
@@ -138,21 +137,15 @@ body{
 
 .navbar-brand-top {
   opacity: .7;
-  margin: auto;
-  width: 50px;
-  height: 50px;
+  margin: 30px;
+  width: 40px;
+  height: 40px;
   padding-top: 30%;
   padding-bottom: 30%;
-  padding-left: 10%;
-  padding: 20px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  float: right;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
+  float: right;/*
   line-height: 55px;*/
   border-radius: 10%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -167,52 +160,12 @@ body{
   
   cursor: pointer;
   text-align: center;
+  padding: 10px;
 
   background: #1eb65b;
   color: #0b4824;
   box-shadow: 5px 20px 30px #aeffdf,
               inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
-}
-
-.navbar-brand-top:before {
-  /*display: block;
-  background: #fff;
-  border-top: 2px solid #ddd;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  z-index: -1;
-  border-radius: 50%;
-  box-shadow: inset 0px 8px 28px #ddd;
-  transition: all 0.5s ease;
-  border-color: hsl(180, 100%, 50%);
-  color: hsl(180, 100%, 50%);
-  text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
-  box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
-              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);*/
-}
-
-.navbar-brand:before {
-  content: "";
-  display: block;
-  background: #fff;
-  border-top: 2px solid #ddd;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-  z-index: -1;
-  border-radius: 50%;
-  box-shadow: inset 0px 8px 28px #ddd;
-  transition: all 0.5s ease;
-  border-color: hsl(180, 100%, 50%);
-  color: hsl(180, 100%, 50%);
-  text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
-  box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
-              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);
 }
 
 .navbar-brand-top:hover {
@@ -228,15 +181,15 @@ body{
   margin: 5px;
   padding: 15px;
   padding-bottom: 30px;
-  width: 37px;
-  height: 37px;
+  width: 67px;
+  height: 67px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  line-height: 19px;
+  line-height: 29px;
   border-radius: 0%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 40px;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -371,5 +324,5 @@ body{
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 2%;
-  margin-left: 10%;
+  margin-left: 9.5%;
 }
