@@ -7,7 +7,6 @@ import Navibar from "./Components/Navibar";
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import SlidyBar from './Components/SlidyBar';
 
 import ElevatorDoor from './Components/Floors/ElevatorDoor';
 
@@ -21,6 +20,8 @@ class App extends Component {
     }
   }
 
+  // const navbarSlidyElements = document.querySelectorAll(‘.navbar-brand-slidy’)
+
   componentDidMount() {
     console.log(this.props)
     fetch("https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10")
@@ -31,11 +32,18 @@ class App extends Component {
   }
 
   handleFloorChange = (floor) => {
+    if (floor === false) {
+      return(
+        <h1>Ground Control to Major Tom....</h1>
+        )
+    }
     if (floor === "P") {
       this.setState({
         result: {url: "https://i.dailymail.co.uk/1s/2020/01/02/21/22924692-7846445-image-a-8_1577999656704.jpg"
           }
         })
+       document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
+        document.getElementById('slidy-penthouse').classList.add('indicate-floor')
         return
       } else if (floor === "R") {
         this.setState({
@@ -43,6 +51,8 @@ class App extends Component {
             url: "https://static.scientificamerican.com/blogs/assets/Image/DES_zoom_offcenter.png" 
           }
         })
+        document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
+        document.getElementById('slidy-rooftop').classList.add('indicate-floor')
         return 
       } else if (floor === "B") {
         this.setState({
@@ -50,6 +60,8 @@ class App extends Component {
             url: "https://i0.wp.com/thescuttlefish.com/wp-content/uploads/2015/07/waitomo-glowworm-cave-new-zealand-joseph-michael-12__880.jpg"
           }
         })
+        document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
+        document.getElementById('slidy-basement').classList.add('indicate-floor')
         return
       } else if (floor === "L") {
         this.setState({
@@ -57,19 +69,16 @@ class App extends Component {
             url: "https://media.wired.com/photos/5b6cc26261743303b6869f59/master/pass/perseid-591937528.jpg"
           }
         })
-        return 
-      } else if (floor === "?") {
-        this.setState({
-          result: {
-            url: "myphoto.jpg"
-          }
-        })
+        document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
+        document.getElementById('slidy-lobby').classList.add('indicate-floor')
         return 
       };
     console.log(floor);
     this.setState({
       result: this.state.NebularData[floor]
     })
+     document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
+     document.getElementById(floor).classList.add('indicate-floor')
   }
 
   render() {

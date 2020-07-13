@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap'
 
 function Footer() {
   return (
-      <Jumbotron fluid className="jumbotron" style={{color: "black"}}>
+      <Jumbotron fluid className="banner-green" style={{color: "black"}}>
         <Container >
         </Container>
       </Jumbotron>

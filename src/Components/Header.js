@@ -16,7 +16,7 @@ const customStyles = {
 function Header() {
   return (
     <header>
-      <Jumbotron fluid className="header">
+      <Jumbotron fluid className="header banner-green">
       <div className="row">
       <div className="panel">
               <Container fluid>
@@ -53,9 +53,3 @@ function Header() {
 }
 
 export default Header;
-
-// <div className="header-buttons">
-// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-// <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand" to="/floor-two">2</NavLink>
-// </div>
