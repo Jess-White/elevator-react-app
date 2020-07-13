@@ -113,8 +113,8 @@ body{
   opacity: 1.0;
   color: #00b4b4;
   margin: 26px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   position: relative;
   text-align: center;
   line-height: 25px;
@@ -232,10 +232,10 @@ body{
   background: #fff;
   border-top: 2px solid #ddd;
   position: absolute;
-  top: -10px;
-  left: -10px;
-  bottom: -10px;
-  right: -10px;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
   z-index: -1;
   border-radius: 50%;
   box-shadow: inset 0px 8px 28px #ddd;
