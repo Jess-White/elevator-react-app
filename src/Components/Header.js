@@ -34,17 +34,17 @@ function Header() {
       <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></NavLink>
       </div>
       <div className="column header-buttons">
-      <Popup modal style={customStyles} trigger={<button className="navbar-brand-top"><h2>abt</h2></button>}>
+      <Popup modal style={customStyles} trigger={<button className="navbar-brand-top"><h3>abt</h3></button>}>
         <div>
         <Modal />
         </div>
       </Popup>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"><h2>raw</h2></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"><h3>raw</h3></NavLink>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com"><h2>src</h2></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com"><h3>src</h3></NavLink>
       </div>
       </div>
             </Jumbotron>
