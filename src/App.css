@@ -24,6 +24,8 @@ body{
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
   opacity: 5.0;
+  padding-bottom: 30%;
+  padding-top: 30%;
 }
 
 .header-buttons {
