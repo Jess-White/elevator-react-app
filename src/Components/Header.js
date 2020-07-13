@@ -21,7 +21,7 @@ function Header() {
       <div className="panel">
               <Container fluid>
                 <div className="column align-left logo">
-                  <img src="/Ascension_logo.png" alt=""/>
+                  <img src="/LogoMakr_3dALOz.png" alt=""/>
                 </div>
 
                 

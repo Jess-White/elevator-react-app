@@ -2,27 +2,11 @@
   text-align: center;
 }
 
-/*.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}*/
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-/*.App-header {
-  background: url(https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/experimental-grunge-texture-12-1560x1170.jpg) no-repeat center fixed;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}*/
 
 .App-link {
   color: #61dafb;
@@ -35,11 +19,6 @@ body{
 
 }
 
-/*.big-frame{
-  background: url(https://lostandtaken.com/downloads/high-quality-grunge-texter-25/) no-repeat center fixed;
-  min-height: 100vh;
-  flex-direction: column;
-}*/
 .header {
   background-color: "black";
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
@@ -62,7 +41,6 @@ body{
   left: 60%;
   margin-left: -40vw;
   overflow: hidden;
-/*  background: url('https://apod.nasa.gov/apod/image/0702/helix_spitzer_720.jpg');*/
   background-size: cover;
   background-position: -200px 0;
   -moz-box-shadow:    inset 0 0 10px #000000;
@@ -108,8 +86,6 @@ body{
   left: 40vw;
   transition: all 3s ease-in-out;
 }
-/*Elevator Panel Styling:
-*/
 
 .vertical-nav {
   min-width: 17rem;
@@ -120,7 +96,6 @@ body{
   position: absolute;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
-/*  margin: auto;*/
   margin-top: 26%;
   margin-left: 40%;
   width: 150px;
@@ -234,11 +209,6 @@ body{
 .container {
 }
 
-/*.flex {
-  display: flex;
-  align-items: flex-end;
-}*/
-
 .section-middle {
   margin-top: 500px;
 }
@@ -251,37 +221,17 @@ body{
   text-align: right;
 }
 
-/*.panel {
-  border-radius: 0.8;
-  background-color: 000000;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}*/
-
 .logo {
   opacity: 1.0;
-  padding-top: 3%;
-  padding-left: 80px;
-  padding-right: 650px;
+  padding-top: 2%;
+  padding-left: 200px;
+  padding-right: 530px;
 }
 
 .jumbotron {
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
 }
-
-/*.left-column {
-  float: left;
-  width: 75%;
-  margin-left: 5%;
-}
-.right-column {
-  float: right;
-  width: 25%;
-}*/
 
 .about {
   background-color: #fff;
@@ -322,4 +272,9 @@ body{
 }
 .popup .close:hover {
   color: "white";
+}
+
+.slidy-bar{
+  background-color: "white";
+  background-size: cover;
 }
