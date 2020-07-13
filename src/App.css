@@ -175,7 +175,7 @@ body{
 }
 
 .navbar-brand-top:before {
-  display: block;
+  /*display: block;
   background: #fff;
   border-top: 2px solid #ddd;
   position: absolute;
@@ -191,7 +191,7 @@ body{
   color: hsl(180, 100%, 50%);
   text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
   box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
-              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);
+              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);*/
 }
 
 .navbar-brand:before {
