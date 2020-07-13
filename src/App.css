@@ -87,9 +87,9 @@ body{
 }
 
 .vertical-nav {
-  min-width: 17rem;
-  width: 17rem;
-  height: 100vh;
+  min-width: 15rem;
+  width: 15rem;
+  height: 90vh;
   left: 30%;
   opacity: 0.8;
   position: absolute;
