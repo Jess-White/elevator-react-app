@@ -28,10 +28,10 @@ function Header() {
               </Container>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i className="fa fa-github-square" aria-hidden="true"></i></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i className="fa fa-2x fa-github-square" aria-hidden="true"></i></NavLink>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i className="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></NavLink>
       </div>
       <div className="column header-buttons">
       <Popup modal style={customStyles} trigger={<button className="navbar-brand-top"><h3>abt</h3></button>}>
