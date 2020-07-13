@@ -41,6 +41,7 @@ body{
   flex-direction: column;
 }*/
 .header {
+  background-color: "black";
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
   opacity: 5.0;
@@ -48,7 +49,8 @@ body{
 }
 
 .header-buttons {
-  left: 100%;
+  left: 50%;
+  line-height: 55px;
 }
 
 .sliding-doors{
@@ -57,7 +59,7 @@ body{
   height: 80vh;
   max-width: 40%;
   position: relative;
-  left: 50%;
+  left: 60%;
   margin-left: -40vw;
   overflow: hidden;
 /*  background: url('https://apod.nasa.gov/apod/image/0702/helix_spitzer_720.jpg');*/
@@ -81,8 +83,8 @@ body{
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  -webkit-transition: 2000ms;
-  border: 3px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: 4000ms;
+  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 .sliding-doors:before {
@@ -99,10 +101,12 @@ body{
 
 .sliding-doors:hover:before{
   left: -40vw;
+  transition: all 3s ease-in-out;
 }
 
 .sliding-doors:hover:after{
   left: 40vw;
+  transition: all 3s ease-in-out;
 }
 /*Elevator Panel Styling:
 */
@@ -119,9 +123,9 @@ body{
 /*  margin: auto;*/
   margin-top: 26%;
   margin-left: 40%;
-  width: 320px;
-  height: 1000px;
-  outline: 100px solid #000201;
+  width: 150px;
+  height: 650px;
+  outline: 50px solid #000201;
   outline-offset: -10px;
 }
 
@@ -134,16 +138,16 @@ body{
   background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
   opacity: 1.0;
   color: #00b4b4;
-  margin: 36px;
-  width: 50px;
-  height: 50px;
+  margin: 26px;
+  width: 40px;
+  height: 40px;
   position: relative;
   text-align: center;
-  line-height: 36px;
+  line-height: 25px;
   border-radius: 50%;
   box-shadow: 0px 3px 3px #aaa, inset 0px 2px 3px #fff;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -158,29 +162,20 @@ body{
 }
 
 .navbar-brand-top {
-  background-color: #1eb65b;
-  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); */
-  opacity: .9;
-  color: #0b4824;
-  margin: 36px;
-  width: 75px;
-  height: 75px;
+  opacity: .7;
+  margin: 30px;
+  width: 80px;
+  height: 80px;
   padding-top: 30%;
-  padding-bottom: 50%;
+  padding-bottom: 30%;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  float: right;
-  line-height: 55px;
-/*  border-radius: 50%;*/
-  box-shadow: 5px 20px 30px #aeffdf,
-              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+  float: right;/*
+  line-height: 55px;*/
+  border-radius: 10%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -191,11 +186,17 @@ body{
   
   cursor: pointer;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
+
+  background: #1eb65b;
+  color: #0b4824;
+  box-shadow: 5px 20px 30px #aeffdf,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
 }
 
 .navbar-brand-top:hover {
   text-decoration: none;
+
   color: #14ffa1;
   background: #168a45;
   box-shadow: 5px 20px 30px #14ffa1, inset 5px 5px 5px 3px #0b4824;
@@ -262,8 +263,9 @@ body{
 
 .logo {
   opacity: 1.0;
+  padding-top: 3%;
   padding-left: 80px;
-  padding-right: 1050px;
+  padding-right: 650px;
 }
 
 .jumbotron {
@@ -280,3 +282,44 @@ body{
   float: right;
   width: 25%;
 }*/
+
+.about {
+  background-color: #fff;
+}
+
+.about-blurb {
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100%;
+  width:100%;
+  position: fixed;
+  background-color: "white";
+}
+
+.modal-blurb {
+
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  color: "white";
+}
+.popup .close:hover {
+  color: "white";
+}

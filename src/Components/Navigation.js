@@ -34,7 +34,6 @@ import { NavLink } from 'react-router-dom';
 
                 <NavLink onClick={() => this.props.handleFloorChange("B")} className="navbar-brand" to="/basement">B</NavLink>
                 <NavLink onClick={() => this.props.handleFloorChange("L")} className="navbar-brand" to="/">L</NavLink>
-                <NavLink onClick={() => this.props.handleFloorChange("A")} className="navbar-brand" to="/About">?</NavLink>
              </div>
           </div>
         </nav>

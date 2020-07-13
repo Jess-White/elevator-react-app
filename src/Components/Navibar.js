@@ -32,7 +32,6 @@ class Navibar extends Component {
            <div>
              <Navigation handleFloorChange={this.props.handleFloorChange}/>
                <Switch>
-                 <Route className="NavRoute" path="/floor-one" component={FloorOne}/>
 
                  <Route className="NavRoute" path="/basement" component={Basement}/>
                  <Route className="NavRoute" path="/penthouse" component={Penthouse}/>
@@ -60,32 +59,3 @@ class Navibar extends Component {
 }
 
 export default Navibar;
-
-// <div>
-//       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-//         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-//         <Navbar.Collapse id="responsive-navbar-nav">
-//           <Nav className="mr-auto">
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-one">FloorOne</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-two">FloorTwo</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-three">FloorThree</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-four">FloorFour</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-five">FloorFive</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-six">FloorSix</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-seven">FloorSeven</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-eight">FloorEight</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-nine">FloorNine</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/floor-ten">FloorTen</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/penthouse">FloorTen</Nav.Link>
-//             <Nav.Link style={{color: "white"}} className="navbar-brand" to="/rooftop">Rooftop</Nav.Link>
-//           </Nav>
-//           <Nav>
-//             <Nav.Link href="#deets">More deets</Nav.Link>
-//             <Nav.Link eventKey={2} href="#memes">
-//               Dank memes
-//             </Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Navbar>
-//       </div>
