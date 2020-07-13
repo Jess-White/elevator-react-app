@@ -28,23 +28,23 @@ function Header() {
               </Container>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i className="fa fa-2x fa-github-square" aria-hidden="true"></i></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i className="fa fa-github-square" aria-hidden="true"></i></NavLink>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i className="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></NavLink>
       </div>
       <div className="column header-buttons">
-      <Popup modal style={customStyles} trigger={<button className="navbar-brand-top"><h1>abt</h1></button>}>
+      <Popup modal style={customStyles} trigger={<button className="navbar-brand-top"><h2>abt</h2></button>}>
         <div>
         <Modal />
         </div>
       </Popup>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"><h1>raw</h1></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com/search/?search_query=planetary%20nebula&number=10"><h2>raw</h2></NavLink>
       </div>
       <div className="column header-buttons">
-      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com"><h1>src</h1></NavLink>
+      <NavLink onClick={() => this.props.handleFloorChange(2)} className="navbar-brand-top" href="https://apodapi.herokuapp.com"><h2>src</h2></NavLink>
       </div>
       </div>
             </Jumbotron>
