@@ -26,13 +26,13 @@ body{
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/beautiful-and-colorful-grunge-texture-9-1560x2080.jpg');
   background-size: cover;
   opacity: 5.0;
-  max-width: 80%;
-  max-height: 80%;
 }
 
 .header-buttons {
   left: 50%;
   line-height: 55px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .sliding-doors{
