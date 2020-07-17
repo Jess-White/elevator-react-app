@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
     return (
 
       <div className="App" >
-        <nav className="vertical-nav fixed-top navbar-fixed-right" style={{backgroundColor: "#2d343a"}} >
+        <nav className="vertical-nav" style={{backgroundColor: "#2d343a"}} >
           <div className="container">
              <div> 
                 <NavLink onClick={() => this.props.handleFloorChange("P")} className="navbar-brand" to="/penthouse">P</NavLink>
